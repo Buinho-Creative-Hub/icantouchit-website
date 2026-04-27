@@ -154,6 +154,30 @@ a.accent-link:hover{color:var(--accent);}
 .resource-placeholder h3{font-size:16px;letter-spacing:.04em;text-transform:uppercase;color:var(--mute);font-weight:600;margin:0 0 10px;}
 .resource-placeholder p{font-size:15px;line-height:1.6;color:var(--mute-2);margin:0;max-width:64ch;}
 
+/* Useful tools — live, production-ready resources */
+.section-lede{font-size:15px;line-height:1.55;color:var(--mute);max-width:60ch;margin:-12px 0 24px;}
+.tool-card{
+  display:grid;grid-template-columns:1fr auto;gap:32px;
+  padding:28px 32px;background:var(--paper);
+  border:1px solid var(--ink);margin-top:16px;
+  align-items:center;text-decoration:none;color:inherit;
+  transition:background .2s, transform .2s;
+}
+.tool-card:hover{background:var(--bone);transform:translateX(2px);}
+.tool-card .tool-tag{
+  display:inline-block;font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:8px;
+}
+.tool-card h3{font-size:22px;font-weight:700;margin:0 0 8px;letter-spacing:-.01em;line-height:1.2;}
+.tool-card p{font-size:15px;line-height:1.55;margin:0;color:var(--mute-2);max-width:62ch;}
+.tool-card .tool-cta{
+  font-size:13px;font-weight:600;color:var(--accent);
+  white-space:nowrap;letter-spacing:-.005em;
+}
+@media (max-width:920px){
+  .tool-card{grid-template-columns:1fr;gap:14px;padding:22px;}
+}
+
 .contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;margin-top:8px;}
 .contact-card{border-top:1px solid var(--ink);padding-top:18px;}
 .contact-country{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600;margin:0 0 8px;}
