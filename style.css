@@ -139,7 +139,7 @@ a.accent-link:hover{color:var(--accent);}
 .partner-card p{font-size:15px;line-height:1.6;margin:0 0 12px;color:var(--mute-2);}
 
 .wp-list{display:grid;gap:0;}
-.wp-card{display:grid;grid-template-columns:80px 1fr 110px;gap:32px;padding:28px 0;border-top:1px solid var(--rule);align-items:start;}
+.wp-card{display:grid;grid-template-columns:80px 1fr;gap:32px;padding:28px 0;border-top:1px solid var(--rule);align-items:start;}
 .wp-card:first-child{border-top:1px solid var(--ink);}
 .wp-id{font-size:13px;letter-spacing:.16em;font-weight:700;color:var(--accent);padding-top:2px;}
 .wp-body h3{font-size:20px;font-weight:700;letter-spacing:-.01em;margin:0 0 10px;}
