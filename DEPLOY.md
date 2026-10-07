@@ -1,6 +1,6 @@
 # Deploy notes — Fingers Read Space website
 
-The site is a plain static bundle (HTML + CSS + JS + one SVG) — no build step, no backend, no environment variables.
+The site is a plain static bundle (HTML + CSS + JS + one SVG) — no build step, no environment variables. Content of the dynamic areas (models, documents, activity reports, partner logos) is read in the browser from the partners' backoffice at https://touchit-admin.buinho.eu (repo `touchit-cms`, hosted on Webtuga) — see README § Dynamic areas.
 
 ## Where it runs
 

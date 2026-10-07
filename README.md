@@ -40,6 +40,27 @@ Duration: 01/12/2025 – 31/12/2027.
 /pt/             Portuguese version, mirrors the same set of pages
 ```
 
+## Dynamic areas (partners' content manager)
+
+Since October 2026 the partners publish content themselves through a small
+backoffice at <https://touchit-admin.buinho.eu> (repo `Buinho-Creative-Hub/touchit-cms`).
+Partners do **not** edit pages or menus — they fill fixed areas that `cms.js` reads from the
+backoffice API and renders on this static site:
+
+| Area | Page | Marker in the HTML |
+|---|---|---|
+| 3D model library (STL/3MF, photos, teaching guide, print settings, video link) | Resources | `data-cms="models"` |
+| Video guides (from the models' video links) | Resources | `data-cms="videos"` |
+| Guides, methodology, reports (PDF) | Resources | `data-cms="documents"` |
+| Activity reports with photo gallery | Activities | `data-cms="activities"` |
+| Partner logos | Partners | `data-partner-logo="<key>"` |
+
+If the backoffice cannot be reached, the original placeholder text stays visible.
+`cms.js` also marks every timeline item as Done / Now / Next from its `data-from` / `data-to` months.
+
+Official project number (grant agreement with CMEPIUS): **2025-1-SI01-KA220-SCH-000364259**
+(application form ID was KA220-SCH-19631881).
+
 ## Visual identity
 
 The website applies the Fingers Read Space identity manual delivered in November 2025 (token set "D1.5"): ASAP typeface, ink/bone/paper neutral palette, deep ink-blue accent, four-colour project mark (red / orange / green / purple semi-arcs around a black square), and a "tactile" hero behaviour where the headline lines respond to hover and focus with a subtle per-letter displacement.
